@@ -4,10 +4,10 @@
     <Counter />
   </div> -->
 
-  <div id="app">
+  <!-- <div id="app">
     <h1 style="text-align: center; color: chartreuse">Memo App</h1>
     <MemoList />
-  </div>
+  </div> -->
 
   <!-- <contoh1 />
   <contoh2 />
@@ -21,6 +21,10 @@
   <todolist /> -->
 
   <!-- <testArray /> -->
+
+  <QUIZ />
+
+  <!-- <Watchers1 /> -->
 </template>
 
 <script setup>
@@ -57,4 +61,8 @@ import vFor3 from "./components/V-FOR/vFor3.vue";
 
 import todolist from "./components/simple todo list/todolist.vue";
 import testArray from "./components/REF-/Array.vue";
+
+import QUIZ from "./components/QUIZ/test.vue";
+
+import Watchers1 from "./components/Watchers/Watchers1.vue";
 </script>
