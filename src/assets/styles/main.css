@@ -1,58 +1,58 @@
 .container {
-  font-family: "Arial", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f4f8;
-  margin: 0;
+  font-family: "Arial", sans-serif; /* Menggunakan font Arial atau sans-serif sebagai cadangan */
+  display: flex; /* Menggunakan flexbox untuk layout */
+  flex-direction: column; /* Mengatur arah flex menjadi kolom */
+  justify-content: center; /* Menyusun konten di tengah secara vertikal */
+  align-items: center; /* Menyusun konten di tengah secara horizontal */
+  height: 100vh; /* Tinggi kontainer 100% dari tinggi viewport */
+  background-color: #f0f4f8; /* Warna latar belakang abu-abu muda */
+  margin: 0; /* Menghilangkan margin default */
 }
 
 .counter-box {
-  text-align: center;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  width: 300px;
+  text-align: center; /* Rata tengah untuk teks di dalam kotak */
+  background: #fff; /* Warna latar belakang putih untuk kotak */
+  border-radius: 10px; /* Sudut melengkung pada kotak */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan lembut di sekitar kotak */
+  padding: 40px; /* Padding di dalam kotak */
+  width: 300px; /* Lebar kotak 300px */
 }
 
 .counter-title {
-  color: #333;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  color: #333; /* Warna teks gelap untuk judul */
+  font-size: 2.5rem; /* Ukuran font untuk judul */
+  margin-bottom: 20px; /* Jarak bawah untuk judul */
 }
 
 .counter-value {
-  display: block;
-  font-size: 4rem;
-  color: #007bff;
-  margin: 20px 0;
-  font-weight: bold;
+  display: block; /* Menampilkan sebagai blok */
+  font-size: 4rem; /* Ukuran font yang besar untuk nilai counter */
+  color: #007bff; /* Warna biru untuk nilai counter */
+  margin: 20px 0; /* Jarak atas dan bawah untuk nilai */
+  font-weight: bold; /* Menebalkan teks nilai */
 }
 
 .button-container {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+  display: flex; /* Menggunakan flexbox untuk tombol */
+  justify-content: center; /* Menyusun tombol di tengah secara horizontal */
+  gap: 15px; /* Jarak antara tombol */
 }
 
 .button {
-  padding: 15px 20px;
-  font-size: 1.5rem;
-  color: #fff;
-  background-color: #28a745;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  padding: 15px 20px; /* Padding untuk tombol */
+  font-size: 1.5rem; /* Ukuran font untuk tombol */
+  color: #fff; /* Warna teks putih untuk tombol */
+  background-color: #28a745; /* Warna latar belakang hijau untuk tombol */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Sudut melengkung pada tombol */
+  cursor: pointer; /* Pointer cursor saat hover */
+  transition: background-color 0.3s, transform 0.2s; /* Transisi untuk perubahan warna dan transformasi */
 }
 
 .button:hover {
-  background-color: #218838;
+  background-color: #218838; /* Warna hijau lebih gelap saat hover */
 }
 
 .button:active {
-  transform: scale(0.95);
+  transform: scale(0.95); /* Mengecilkan tombol saat ditekan */
 }

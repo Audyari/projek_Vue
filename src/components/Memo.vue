@@ -12,12 +12,18 @@
       placeholder="Write your memo here..."
       @input="updateMemo"
     ></textarea>
-    <button @click="removeMemo">Delete</button>
+    <p class="memo-date">
+      <span class="date-icon"></span>
+      {{ memo.tanggal }}
+      <button @click="removeMemo">Delete</button>
+    </p>
+    <p>{{ memo.id }}</p>
   </div>
 </template>
 
 <script setup>
 import { defineProps, defineEmits } from "vue";
+import { errorMessages } from "vue/compiler-sfc";
 
 /**
  * Define the component props
@@ -37,7 +43,7 @@ const props = defineProps({
 /**
  * Define the component emits
  */
-const emit = defineEmits(['update', 'delete']);
+const emit = defineEmits(["update", "delete"]);
 
 /**
  * Call the onDelete prop when the user clicks the delete button
@@ -71,9 +77,23 @@ textarea {
   resize: none;
 }
 button {
-  position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+.memo-date {
+  font-size: 14px; /* Ukuran font yang lebih kecil */
+  font-weight: 500; /* Sedikit tebal untuk penekanan */
+  color: #555; /* Warna abu-abu lembut */
+  margin: 0; /* Hilangkan margin bawaan */
+  display: flex; /* Gunakan flex untuk tata letak ikon dan teks */
+  align-items: center; /* Rata tengah secara vertikal */
+  gap: 8px; /* Jarak antara ikon dan teks */
+}
+
+.date-icon {
+  font-size: 16px; /* Ukuran ikon sedikit lebih besar */
+  color: #ff6f61; /* Warna ikon senada dengan tema */
 }
 </style>
 
